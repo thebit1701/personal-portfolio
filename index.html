@@ -42,13 +42,15 @@
     <nav class="top-navbar">
       <!-- for shortcut use div.max-width and hit enter -->
       <div class="max-width">
-        <div class="logo"><a href="#home">Portfo<span>lio.</span></a></div>
+        <div class="logo"><a href="#home">Vis<span>hal</span></a></div>
     
         <!-- ul.menu>li*6 shortcut -->
         <ul class="menu">
-          <li><a href="#home"class="menu-btn">Home</a></li>
+          <!-- <li><a href="#home"class="menu-btn">Home</a></li> -->
           <li><a href="#about" class="menu-btn">About Me</a></li>
-          <!-- <li><a href="#">Experience</a></li> -->
+          <li><a href="#experience" class="menu-btn" >Experience</a></li>
+
+          <li><a href="#education" class="menu-btn">Education</a></li>
           <li><a href="#skills" class="menu-btn">Skills</a></li>
           <li><a href="#portfolio" class="menu-btn">Projects</a></li>
           <li><a href="#contact" class="menu-btn">Contact</a></li>
@@ -65,19 +67,51 @@
 <section class="home" id="home">
   <div class="max-width">
     <div class="home-content">
-      <div class="text-1">Hi, my name is</div>
-      <div class="text-2">Vishal Arya</div>
-      <div class="text-3">And I'm a <span>Student</span></div>
-      <a href="#">Resume</a>
+      <div class="text-1">Hi there!</div>
+      <div class="text-2">I'm Vishal Arya</div>
+      <div class="text-3">Welcome to my <span>Website👋</span></div>
+      <a href="#">📝Resume</a>
     </div>
   </div>
 </section>
 
-<!-- about section  -->
 
+
+<!-- about section start -->
 <section class="about" id="about">
   <div class="max-width">
-    <h2 class="h-title">About me</h2>
+      <h2 class="h-title">About me</h2>
+      <span class="underline"></span>
+      <div class="me-content">
+          <div class="column left">
+            <img src="https://picsum.photos/380/380" class="img-fluid">
+
+          </div>
+          <div class="column right">
+              <!-- <div class="text">I'm Prakash and I'm a <span class="typing-2"></span></div> -->
+              <p>Hey there! I'm Vishal Arya, a Computer Science graduate from ABES Engineering College. I'm very passionate and dedicated to my work. I love problem solving. I am interested in exploring the fields of software engineering. Looking for exciting oppurtunities to work with my skills in startups as well as companies with scale.</p>
+               <p class="socio">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+                <a href="#"><i class="far fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </p>
+              <!-- <a href="#">Download CV</a> -->
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- about section  -->
+
+<section class="about colored-section" id="experience">
+  <div class="max-width">
+    <h2 class="c-title">Education</h2>
+    <span class="underline" style="background: #fff;"></span>
     <div class="wrapper">
       <div class="center-line">
         <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
@@ -85,30 +119,47 @@
       <div class="row row-1">
         <section>
           <i class="icon fas fa-briefcase"></i>
+          <!-- <div class="center-line">
+            <a href="#" class="scroll-icon"><i class="fas fa-briefcase"></i></a>
+          </div> -->
+        
+
           <div class="details">
             <span class="title color-title">Programmer Analyst Trainee</span>
             <span class="color-title">Cognizant, Pune</span>
-          </div>
-          <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos
-            vero sapiente voluptas debitis dicta dolore.</p>
-          <div class="bottom">
-            <!-- <a href="#">Read more</a> -->
             <i class="color-title">April 2021 - Present</i>
+
           </div>
+          <ul class="company-details">
+            <li>Worked on the DotNet development with MySQL.</li>
+            <li>
+              Sucessfully completed a practise project, making restful API for CRUD Operations with MySQL Database.
+            </li>
+          </ul>
+          <!-- <div class="bottom">
+            
+          </div> -->
         </section>
       </div>
-      <div class="row row-2">
+      <div class="row row-2" id="education">
         <section>
           <i class="icon fas fa-briefcase"></i>
           <div class="details">
             <span class="title color-title">Associate Software Developer</span>
+            <i class="color-title">January 2021 - March 2021</i>
+
             <span class="color-title">Innostax Software Lab, Gurgaon</span>
           </div>
-          <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos
-            vero sapiente voluptas debitis dicta dolore.</p>
+          <ul class="company-details">
+          <li>I was a part of core development team, where I built a user dashboard to onboard the data from the different users
+            using React and enabling interactive charts in the real-time.</li>
+          <li>
+            Contributed to the team with small tasks, such as code review, code refactoring, making resuable components,
+            improvements, etc.
+          </li>
+        </ul>
           <div class="bottom">
             <!-- <a href="#">Read more</a> -->
-            <i class="color-title">January 2021 - March 2021</i>
           </div>
         </section>
       </div>
@@ -116,29 +167,31 @@
         <section>
           <i class="icon fas fa-user-graduate"></i>
           <div class="details">
-            <span class="title color-title">B.Tech</span>
+            <span class="title color-title">B.Tech, Computer Science</span>
+            <i class="color-title">2017 - 2021</i>
             <span class="color-title">ABES Engineering College, Ghazaibad</span>
+            <!-- <span class="color-title">Scored 7.72</span> -->
+            
           </div>
-          <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos
-            vero sapiente voluptas debitis dicta dolore.</p>
-          <div class="bottom">
-            <!-- <a href="#">Read more</a> -->
+          <p>Courseworks - Programming language, Data Structures & Algorithms, Operating Systems, Networking, Object Oriented Programming and Database and Management System.</p>
+          <!-- <div class="bottom">
+            
             <i class="color-title">August,2017 - August,2021</i>
-          </div>
+          </div> -->
         </section>
       </div>
       <div class="row row-2">
         <section>
           <i class="icon fas fa-school"></i>
           <div class="details">
-            <span class="title color-title">Intermediate</span>
+            <span class="title color-title">Higher Secondary</span>
+            <i class="color-title">2016 - 2017</i>
             <span class="color-title">VIP Inter College, Pilkhuwa</span>
           </div>
-          <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos
-            vero sapiente voluptas debitis dicta dolore.</p>
+          <p>I passed higher Secondary , and I had interest in science and love to solve maths. Unexpectedly, I got a laptop, this turns out my interest towards the computer science. Since then I have fallen in love with it.</p>
           <div class="bottom">
             <!-- <a href="#">Read more</a> -->
-            <i class="color-title">2016 - 2017</i>
+            
           </div>
         </section>
       </div>
@@ -146,14 +199,14 @@
         <section>
           <i class="icon fas fa-school"></i>
           <div class="details">
-            <span class="title color-title">Highschool</span>
+            <span class="title color-title">Secondary School</span>
+            <i class="color-title">2014 - 2015</i>
+
             <span class="color-title">VIP Inter College, Pilkhuwa</span>
           </div>
-          <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos
-            vero sapiente voluptas debitis dicta dolore.</p>
+          <p>I passed my high school with math and I had a passion for it, which ultimately catapulted me into the world of engineering.</p>
           <div class="bottom">
             <!-- <a href="#">Read more</a> -->
-            <i class="color-title">- 2014 - 2015</i>
           </div>
         </section>
       </div>
@@ -163,12 +216,14 @@
 
 <!-- skills section  -->
 
-<section class="colored-section" id="skills">
+<section id="skills">
   <div class="max-width">
-  <div class="container">
-    <h2 class="c-title">My Skills</h2>
+  <div>
+    <h2 class="h-title">My Skills</h2>
+    <span class="underline"></span>
+
     <div class="row mbr-justify-content-center">
-      <div class="col-lg-6 mbr-col-md-10">
+      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="wrap">
           <div class="ico-wrap">
             <span class="mbr-iconfont fa-code fa"></span>
@@ -179,7 +234,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 mbr-col-md-10">
+      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="wrap">
           <div class="ico-wrap">
             <span class="mbr-iconfont fab fa-globe fa"></span>
@@ -191,7 +246,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 mbr-col-md-10">
+      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="wrap">
           <div class="ico-wrap">
             <span class="mbr-iconfont fa-laptop fa"></span>
@@ -203,7 +258,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 mbr-col-md-10">
+      <div class="col-lg-6 col-md-6 col-sm-6">
         <div class="wrap">
           <div class="ico-wrap">
             <span class="mbr-iconfont fa-code-branch fa"></span>
@@ -221,11 +276,13 @@
 
 <!----------Project section-------->
 
-<section id="portfolio" class="portfolio">
+<section id="portfolio" class="portfolio colored-section">
   <div class="max-width">
-  <div class="container">
+  <div>
     <div class="section-title">
-      <h2 class="h-title">Projects</h2>
+      <h2 class="c-title">Projects</h2>
+    <span class="underline" style="background: #fff;"></span>
+
     </div>
     <div class="row portfolio-container">
       <div class="col-lg-4 col-md-6 portfolio-item">
@@ -305,12 +362,13 @@
   <!-- contact section start -->
 <section class="contact" id="contact">
   <div class="max-width">
-    <h2 class="c-title">Contact me</h2>
+    <h2 class="h-title">React Out to me!</h2>
+    <span class="underline"></span>
+
     <div class="contact-content">
       <div class="column left">
         <div class="text">Get in Touch</div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus
-          quis soluta nesciunt veritatis vitae nobis?</p>
+        <p> I would love to hear from you! Please drop me a message and let's see how I can help you. </p>
         <div class="icons">
           <div class="contact-row">
             <i class="fas fa-user"></i>
@@ -362,7 +420,7 @@
 </section>
 
    <!-- footer section start -->
-<footer class="footer-section">
+<footer class="colored-section">
 
   <div class="social">
     <a href="#"><i class="fab fa-instagram"></i></a>
